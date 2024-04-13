@@ -7,7 +7,7 @@
 [![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
 <a href="https://www.producthunt.com/posts/weblatex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-weblatex" target="_blank" rel="noreferrer noopener"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=383518&theme=dark" alt="WebLaTeX - A&#0032;LaTeX&#0032;editor&#0032;with&#0032;Git&#0044;&#0032;VSCode&#0044;&#0032;Copilot&#0044;&#0032;Grammarly&#0032;and&#0032;more | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-  
+
 > A complete alternative for Overleaf with VSCode + Web + Git Integration + GitHub Copilot + Grammarly/LanguageTool + Live Collaboration Support
 
 <a href="https://github.com/sanjib-sen/weblatex/generate" target="_blank" rel="noreferrer noopener"> ![get-started](https://user-images.githubusercontent.com/54777542/224549654-6f2dc0ad-54e0-4827-b316-ebe264dbf007.svg)</a>
@@ -53,7 +53,7 @@
 
 ## Why
 
-Do you use latex as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometimes wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
+Do you use LaTeX as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometimes wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
 
 Hasn't it occurred to you that if only you could use your favorite editor VSCode to write your documents? With all the settings you configured, themes you liked and the extensions you probably prefer over your toxic girlfriend?
 
@@ -92,15 +92,15 @@ Yes, but
 1. Login or Sign Up to [GitHub](https://github.com/login)
 2. Use this as template or Fork.
 
-    - **Use as Template (Recommended):** just Click on `Use this template` and `Create a new Repository` or just      [Click Here](https://github.com/sanjib-sen/weblatex/generate)
-    
-    Or,
-    
-    - **Fork:** Fork this repository or just [Click Here](https://github.com/sanjib-sen/weblatex/fork)
-    
+   - **Use as Template (Recommended):** just Click on `Use this template` and `Create a new Repository` or just [Click Here](https://github.com/sanjib-sen/weblatex/generate)
+
+   Or,
+
+   - **Fork:** Fork this repository or just [Click Here](https://github.com/sanjib-sen/weblatex/fork)
+
 3. Give it a name and select **Create Fork / Create repository from template**
 4. Select **<> Code** > **CodeSpaces** > **Create Codespace on Main**
-    ![tutorial](https://user-images.githubusercontent.com/54777542/224550678-32a949ae-3a9b-4e8d-a0f1-ad30ec429908.gif)
+   ![tutorial](https://user-images.githubusercontent.com/54777542/224550678-32a949ae-3a9b-4e8d-a0f1-ad30ec429908.gif)
 
 5. It will start installing. **You Have to wait for 2 mins in the first time**. After that it will take 2/3 seconds to open up
 
@@ -113,12 +113,12 @@ Generated PDFs will be saved to **`/PDF`** directory
 1. Pressing `Ctrl+S` will save the document and generate PDF in the **PDF** folder
 2. To check the generated PDF click on the PDF file. However **It will take 20/30 seconds to open the preview for the first time. So, do not panic**. After that, it will generate and preview the pdf instantly.
 3. Your code will be automatically saved and the PDF will generate automatically each time you edit something
-4. You can see all the error logs in the **Terminal > Output > Latex Compiler** as well as in the Latex Workshop sidebar
+4. You can see all the error logs in the **Terminal > Output > LaTeX Compiler** as well as in the LaTeX Workshop sidebar
 5. If it shows **Error showing PDF** or in case of any inconvenience, just reload the browser or press `Ctrl+R`
 6. **Just use it as you use Visual Studio Code**
 7. Do not delete the `devcontainer.json` file. However you can edit the properties there to customize many things!
 
-## To use with LuaLatex or any other Tex program
+## To use with LuaLaTeX or any other TeX program
 
 Add this line to your main .tex file
 
@@ -126,7 +126,7 @@ Add this line to your main .tex file
 %!TEX program = <tex_program>
 ```
 
-For example, to use **`LuaLatex`**:
+For example, to use **`LuaLaTeX`**:
 
 ```tex
 %!TEX program = lualatex
@@ -134,19 +134,19 @@ For example, to use **`LuaLatex`**:
 
 ## GitHub Copilot
 
- Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to [@thodson-hugs](https://github.com/thodson-hugs). This program will suggest the next command, sentence and paragraph based on your document and previous writings.
+Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to [@thodson-hugs](https://github.com/thodson-hugs). This program will suggest the next command, sentence and paragraph based on your document and previous writings.
 
 ![copilot](https://user-images.githubusercontent.com/54777542/224550711-9927d67f-e63e-445e-9ff0-db7674d7acef.gif)
 
 To turn this off just **remove** or **comment out** the `"GitHub.copilot"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
 
-  ```json
-   "extensions": [
-        "...",
-        //"GitHub.copilot",
-        "..."
-        ]
-  ```
+```json
+ "extensions": [
+      "...",
+      //"GitHub.copilot",
+      "..."
+      ]
+```
 
 ## Grammarly
 
@@ -154,25 +154,25 @@ This editor has built-in [Grammarly](https://www.grammarly.com/) support for `.t
 
 To disable grammarly, you can just **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
 
-  ```json
-   "extensions": [
-        "...",
-        //"znck.grammarly",
-        "..."
-        ]
-  ```
+```json
+ "extensions": [
+      "...",
+      //"znck.grammarly",
+      "..."
+      ]
+```
 
 If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
 
-  ```json
-    "grammarly.files.include": ["*.md", ".YourFileExtension"]
-  ```
+```json
+  "grammarly.files.include": ["*.md", ".YourFileExtension"]
+```
 
 And in case you do not want to use Grammarly for other files, add your file extension in the
 
-  ```json
-    "grammarly.files.exclude": ["*.md", ".YourFileExtension"]
-  ```
+```json
+  "grammarly.files.exclude": ["*.md", ".YourFileExtension"]
+```
 
 You can use Grammarly in any file apart from `.tex` files. Just press `CTRL + SHIFT + P` and search for `Grammarly: Check text`.
 
@@ -182,23 +182,23 @@ This editor uses Grammarly Free account to check grammar and spelling. However i
 
 This editor has built-in [LanguageTool](https://languagetool.org) support for `BibTEX`, `ConTEXt`, `LATEX`, `Markdown`, `Org`, `reStructuredText`, `R Sweave`, and `XHTML` documents but **it is disabled by default in favor of grammarly**. If you want to use LanguageTool instead of grammarly, just **uncomment** the following lines from `.devcontainer/devcontainer.json`
 
-  ```json
-  "extensions": [
-      "...",
-      "valentjn.vscode-ltex",
-      "..."
-    ]
-  ```
-  
-  And the **remove** or **comment out** the `"znck.grammarly"` extension from the extensions list in `./.devcontainer/devcontainer.json` file. (Recommended)
+```json
+"extensions": [
+    "...",
+    "valentjn.vscode-ltex",
+    "..."
+  ]
+```
 
-  ```json
-  "extensions": [
-      "...",
-      // "znck.grammarly",
-      "..."
-    ]
-  ```
+And the **remove** or **comment out** the `"znck.grammarly"` extension from the extensions list in `./.devcontainer/devcontainer.json` file. (Recommended)
+
+```json
+"extensions": [
+    "...",
+    // "znck.grammarly",
+    "..."
+  ]
+```
 
 ## Live Collaboration
 
@@ -210,32 +210,32 @@ Just click on the **Live Share** Sidebar button and you are good to go
 
 If you do not need the Live Collaboration at all, you can just **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
 
-  ```json
-  "extensions": [
-      "...",
-      // "ms-vsliveshare.vsliveshare",
-      "..."
-    ]
-  ```
+```json
+"extensions": [
+    "...",
+    // "ms-vsliveshare.vsliveshare",
+    "..."
+  ]
+```
 
 ## PDF Viewer Dark Mode
 
 The pdf viewer will preview the pdf in Dark Mode by default if your Operating System is in Dark Mode. To view the pdf in Normal mode in os-wide dark mode just **remove or comment** these lines from `./.devcontainer/devcontainer.json`.
 
-  ```json
-    //"latex-workshop.view.pdf.color.dark.pageColorsBackground":"#171717",
-    //"latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF",
-    //"latex-workshop.view.pdf.color.dark.backgroundColor":"#171717",
-  ```
+```json
+  //"latex-workshop.view.pdf.color.dark.pageColorsBackground":"#171717",
+  //"latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF",
+  //"latex-workshop.view.pdf.color.dark.backgroundColor":"#171717",
+```
 
 ## Configuration
 
 - To change the output directory change the following properties in `./.devcontainer/devcontainer.json`
 
-    ```json
-    "latex-workshop.latex.outDir": "<YourDirectoryName>",
-    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>"],
-    ```
+  ```json
+  "latex-workshop.latex.outDir": "<YourDirectoryName>",
+  "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>"],
+  ```
 
 - Other configurations (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check the [Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
 
@@ -259,8 +259,8 @@ I am open to and request you to contribute to this project. You can just Create 
 
 ## Credits
 
-- @James-Yu's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the Latex support.
-- [danteev/texlive](https://github.com/dante-ev/docker-texlive) For Latex compilation.
+- @James-Yu's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the LaTeX support.
+- [danteev/texlive](https://github.com/dante-ev/docker-texlive) For LaTeX compilation.
 - @znck's [Grammarly](https://github.com/znck/grammarly) for Grammarly support.
 - [@thodson-hugs](https://github.com/thodson-hugs) for GitHub Copilot
 
